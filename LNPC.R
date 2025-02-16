@@ -19,10 +19,10 @@ stack.dat=rbind(y1,y2,y3)
 
 #### LNPC estimation ####
 
-mod.lnpca=AlphaNP(stack.dat30[,1:30],Q,gate="AND",method="Hamming")
+mod.lnpc=AlphaNP(stack.dat30,Q,gate="AND",method="Hamming")
 # t1
-att.lnpca.t1=mod.lnpca$alpha.est[1:30,]
+att.lnpc.t1=mod.lnpc$alpha.est[1:30,]
 # t2
-att.lnpca.t2=mod.lnpca$alpha.est[31:60,]
+att.lnpc.t2=mod.lnpc$alpha.est[31:60,]
 # t3
-att.lnpca.t3=mod.lnpca$alpha.est[61:90,]
+att.lnpc.t3=mod.lnpc$alpha.est[61:90,]
